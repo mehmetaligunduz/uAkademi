@@ -1,0 +1,139 @@
+{
+    "categories": [
+      {
+        "categoryId": 2,
+        "categoryName": "Condiments",
+        "description": "Sweet and savory sauces, relishes, spreads, and seasonings"
+      },
+      {
+        "categoryId": 4,
+        "categoryName": "Dairy Products",
+        "description": "Cheeses"
+      },
+      {
+        "categoryId": 5,
+        "categoryName": "Grains-Cereals",
+        "description": "Breads, crackers, pasta, and cereal"
+      },
+      {
+        "categoryId": 7,
+        "categoryName": "Produce",
+        "description": "Dried fruit and bean curd"
+      },
+      {
+        "categoryId": 8,
+        "categoryName": "Seafood",
+        "description": "Seaweed and fish"
+      }
+    ],
+    "products": [
+      {
+        "productId": 11,
+        "productName": "Queso Cabrales",
+        "supplierId": 5,
+        "categoryId": 4,
+        "quantityPerUnit": "1 kg pkg.",
+        "unitPrice": "21.0000",
+        "unitsInStock": 22,
+        "unitsOnOrder": 30,
+        "reorderLevel": 30,
+        "discontinued": false
+      },
+      {
+        "productId": 14,
+        "productName": "Tofu",
+        "supplierId": 6,
+        "categoryId": 7,
+        "quantityPerUnit": "40 - 100 g pkgs.",
+        "unitPrice": "23.2500",
+        "unitsInStock": 35,
+        "unitsOnOrder": 0,
+        "reorderLevel": 0,
+        "discontinued": false
+      },
+      {
+        "productId": 22,
+        "productName": "Gustaf's Knäckebröd",
+        "supplierId": 9,
+        "categoryId": 5,
+        "quantityPerUnit": "24 - 500 g pkgs.",
+        "unitPrice": "21.0000",
+        "unitsInStock": 104,
+        "unitsOnOrder": 0,
+        "reorderLevel": 25,
+        "discontinued": false
+      },
+      {
+        "productId": 41,
+        "productName": "Jack's New England Clam Chowder",
+        "supplierId": 19,
+        "categoryId": 8,
+        "quantityPerUnit": "12 - 12 oz cans",
+        "unitPrice": "9.6500",
+        "unitsInStock": 85,
+        "unitsOnOrder": 0,
+        "reorderLevel": 10,
+        "discontinued": false
+      },
+      {
+        "productId": 42,
+        "productName": "Singaporean Hokkien Fried Mee",
+        "supplierId": 20,
+        "categoryId": 5,
+        "quantityPerUnit": "32 - 1 kg pkgs.",
+        "unitPrice": "14.0000",
+        "unitsInStock": 26,
+        "unitsOnOrder": 0,
+        "reorderLevel": 0,
+        "discontinued": true
+      },
+      {
+        "productId": 51,
+        "productName": "Manjimup Dried Apples",
+        "supplierId": 24,
+        "categoryId": 7,
+        "quantityPerUnit": "50 - 300 g pkgs.",
+        "unitPrice": "53.0000",
+        "unitsInStock": 20,
+        "unitsOnOrder": 0,
+        "reorderLevel": 10,
+        "discontinued": false
+      },
+      {
+        "productId": 57,
+        "productName": "Ravioli Angelo",
+        "supplierId": 26,
+        "categoryId": 5,
+        "quantityPerUnit": "24 - 250 g pkgs.",
+        "unitPrice": "19.5000",
+        "unitsInStock": 36,
+        "unitsOnOrder": 0,
+        "reorderLevel": 20,
+        "discontinued": false
+      },
+      {
+        "productId": 65,
+        "productName": "Louisiana Fiery Hot Pepper Sauce",
+        "supplierId": 2,
+        "categoryId": 2,
+        "quantityPerUnit": "32 - 8 oz bottles",
+        "unitPrice": "21.0500",
+        "unitsInStock": 76,
+        "unitsOnOrder": 0,
+        "reorderLevel": 0,
+        "discontinued": false
+      },
+      {
+        "productId": 72,
+        "productName": "Mozzarella di Giovanni",
+        "supplierId": 14,
+        "categoryId": 4,
+        "quantityPerUnit": "24 - 200 g pkgs.",
+        "unitPrice": "34.8000",
+        "unitsInStock": 14,
+        "unitsOnOrder": 0,
+        "reorderLevel": 0,
+        "discontinued": false
+      }
+    ]
+}
