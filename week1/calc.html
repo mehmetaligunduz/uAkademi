@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi | Üretken Akademi</title>
+    <style>
+        body{
+            max-width: 500px;
+            margin: auto;
+            margin-top: 10%;
+        }
+        
+        .display{
+            width: 10px;
+            align-items: center;
+            padding-right: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            
+        }
+        
+        .td{
+            margin: 20px;
+            padding: 40px;
+            background-color: #efefef;
+            cursor: pointer;
+            border: 1px solid #ececec;
+            font-size: 2em;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        table {
+            border: 1px solid;
+        }
+    </style>
+    <script>
+        function insert(params) {
+            document.getElementById("display").innerText += params;
+        }
+        
+        function asd(){
+            document.getElementById("display").innerText = '';
+        }
+        function calc(){
+            document.getElementById("display").innerText = eval(document.getElementById("display").innerText).toFixed(2);
+        }
+        
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="3" style="text-align: right;"><span id="display" class="display"></span></td>
+            <td class="td" onclick="asd()"><span class="button">C</span></td>
+        </tr>
+        <tr>
+            <td class="td" onclick="insert(1)"><span class="button">1</span></td>
+            <td class="td" onclick="insert(2)"><span class="button">2</span></td>
+            <td class="td" onclick="insert(3)"><span class="button">3</span></td>
+            <td class="td" onclick="insert('/')"><span class="button">/</span></td>
+        </tr>
+        <tr>
+            <td class="td" onclick="insert(4)"><span class="button">4</span></td>
+            <td class="td" onclick="insert(5)"><span class="button">5</span></td>
+            <td class="td" onclick="insert(6)"><span class="button">6</span></td>
+            <td class="td" onclick="insert('-')"><span class="button">-</span></td>
+        </tr>
+        <tr>
+            <td class="td" onclick="insert(7)"><span class="button">7</span></td>
+            <td class="td" onclick="insert(8)"><span class="button">8</span></td>
+            <td class="td" onclick="insert(9)"><span class="button">9</span></td>
+            <td class="td" onclick="insert('+')"><span class="button">+</span></td>
+        </tr>
+        <tr>
+            <td class="td" onclick="insert('.')"><span class="button">.</span></td>
+            <td class="td" onclick="insert(0)"><span class="button">0</span></td>
+            <td class="td" onclick="calc()"><span class="button">=</span></td>
+            <td class="td" onclick="insert('*')"><span class="button">*</span></td>
+        </tr>
+    </table>
+</body>
+</html> 

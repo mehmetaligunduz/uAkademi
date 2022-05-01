@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery | Üretken Akademi</title>
+    <style>
+        .title{
+            top: 0;
+            font-size: 70px;
+            font-weight: 50px;
+            line-height: 1.4em;
+            padding-left: 10px;
+            letter-spacing: 2.7px;
+            text-align: center;
+            position: fixed;
+            padding-top: 10px;
+            margin-left: 62%;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Helvetica;
+            color: rgba(0, 0, 0, 1);
+            text-transform: lowercase;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: all 0.1s;
+        }
+
+        img:hover {
+            transition: all 0.5s;
+            transform: scale(1.7);
+            transition-property: all;
+            transition-property: transform;
+            -webkit-box-shadow: 4px 5px 26px -5px rgba(0,0,0,0.57);
+            -moz-box-shadow: 4px 5px 26px -5px rgba(0,0,0,0.57);
+            box-shadow: 4px 5px 26px -5px rgba(0,0,0,0.57);
+        }
+        
+        .container {
+            margin: auto;
+            width: 960px;
+            padding: 10px; 
+            margin-bottom: 4%;
+            margin-top: 120px;
+            border-radius: 10px;
+        }
+
+        .footer {
+            color: #aaa;
+            margin-bottom: 4%;
+            text-align: center;
+            font-family: Helvetica;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">gallery</div>
+    <div class="container" id="dashboard"></div>
+    <script>
+        images = "";
+        for (let i = 0; i < 15; i++) { 
+            images += `<img src="https://source.unsplash.com/random/300X300?sig=${i}" alt='image ${i}'>`;    
+        }
+        document.getElementById("dashboard").innerHTML = images;
+    </script>
+    
+    <div class="footer">
+        &copy 2022 | Üretken Akademi <br />
+        All rights reserved
+    </div>
+</body>
+</html>
